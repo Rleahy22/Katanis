@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	aPlayer := MakePlayer("Andrew")
+	fmt.Println(aPlayer)
 }
