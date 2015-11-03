@@ -4,7 +4,8 @@
   "description": "A gaming platform built in go using webRTC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "catw -c 'lessc -' 'src/app/components/**/*.less' > static/bundle.css"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,10 @@
     "url": "https://github.com/Rleahy22/Katanis/issues"
   },
   "homepage": "https://github.com/Rleahy22/Katanis",
-  "devDependencies": {},
+  "devDependencies": {
+    "catw": "^1.0.1",
+    "less": "^2.5.3"
+  },
   "dependencies": {
     "angular-ui-router": "^0.2.15"
   }
